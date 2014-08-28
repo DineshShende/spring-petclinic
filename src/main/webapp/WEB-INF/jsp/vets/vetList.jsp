@@ -16,7 +16,7 @@
 
     <h2>Veterinarians</h2>
 
-    <datatables:table id="vets" data="${vets.vetList}" row="vet" theme="bootstrap2" cssClass="table table-striped" pageable="false" info="false" export="pdf">
+    <datatables:table id="vets" data="${vets.vetList}" row="vet" pageable="false" info="false" export="pdf">
         <datatables:column title="Name">
             <c:out value="${vet.firstName} ${vet.lastName}"></c:out>
         </datatables:column>
